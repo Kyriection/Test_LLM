@@ -1,0 +1,564 @@
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Starting scriptStarting script
+
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+W0119 15:05:52.003000 1837995 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1837999 closing signal SIGTERM
+E0119 15:05:52.167000 1837995 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 1837998) of binary: /home/huangti/miniconda3/envs/spam/bin/python
+Traceback (most recent call last):
+  File "/home/huangti/miniconda3/envs/spam/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.5.0', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main_pretrain.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-01-19_15:05:52
+  host      : gcn155.local.snellius.surf.nl
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 1837998)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Starting script
+Starting script
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+W0119 15:06:00.923000 1838141 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1838144 closing signal SIGTERM
+E0119 15:06:01.037000 1838141 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 1 (pid: 1838145) of binary: /home/huangti/miniconda3/envs/spam/bin/python
+Traceback (most recent call last):
+  File "/home/huangti/miniconda3/envs/spam/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.5.0', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main_pretrain.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-01-19_15:06:00
+  host      : gcn155.local.snellius.surf.nl
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 1838145)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Starting script
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+Starting script
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+W0119 15:06:10.008000 1838202 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1838205 closing signal SIGTERM
+E0119 15:06:10.122000 1838202 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 1 (pid: 1838206) of binary: /home/huangti/miniconda3/envs/spam/bin/python
+Traceback (most recent call last):
+  File "/home/huangti/miniconda3/envs/spam/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.5.0', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main_pretrain.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-01-19_15:06:10
+  host      : gcn155.local.snellius.surf.nl
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 1838206)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Starting script
+Starting script
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+W0119 15:06:19.086000 1838270 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1838273 closing signal SIGTERM
+E0119 15:06:19.200000 1838270 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 1 (pid: 1838274) of binary: /home/huangti/miniconda3/envs/spam/bin/python
+Traceback (most recent call last):
+  File "/home/huangti/miniconda3/envs/spam/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.5.0', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main_pretrain.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-01-19_15:06:19
+  host      : gcn155.local.snellius.surf.nl
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 1838274)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Starting script
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+Starting script
+usage: main_pretrain.py [-h] --model_config MODEL_CONFIG
+                        [--eval_every EVAL_EVERY] [--save_every SAVE_EVERY]
+                        [--dtype DTYPE] [--seed SEED]
+                        [--resume_step RESUME_STEP] [--restore_optimizer]
+                        [--continue_from CONTINUE_FROM] [--single_gpu]
+                        [--save_dir SAVE_DIR] [--use_hf_model]
+                        [--workers WORKERS] --batch_size BATCH_SIZE
+                        [--gradient_accumulation GRADIENT_ACCUMULATION]
+                        [--total_batch_size TOTAL_BATCH_SIZE] [--lr LR]
+                        [--warmup_steps WARMUP_STEPS]
+                        [--num_training_steps NUM_TRAINING_STEPS]
+                        [--max_train_tokens MAX_TRAIN_TOKENS]
+                        [--optimizer OPTIMIZER] [--max_length MAX_LENGTH]
+                        [--scheduler {linear,cosine,cosine_restarts}]
+                        [--min_lr_ratio MIN_LR_RATIO]
+                        [--weight_decay WEIGHT_DECAY]
+                        [--grad_clipping GRAD_CLIPPING]
+                        [--activation_checkpointing] [--tags TAGS]
+                        [--name NAME] [--project PROJECT] [--unset_wandb]
+                        [--entity ENTITY] [--beta1 BETA1] [--beta2 BETA2]
+                        [--rank RANK] [--update_proj_gap UPDATE_PROJ_GAP]
+                        [--galore_scale GALORE_SCALE] [--proj_type PROJ_TYPE]
+                        [--proj_quant] [--proj_bits PROJ_BITS]
+                        [--proj_group_size PROJ_GROUP_SIZE] [--weight_quant]
+                        [--weight_bits WEIGHT_BITS]
+                        [--weight_group_size WEIGHT_GROUP_SIZE]
+                        [--stochastic_round] [--simulation]
+                        [--cos_threshold COS_THRESHOLD]
+                        [--gamma_proj GAMMA_PROJ] [--queue_size QUEUE_SIZE]
+                        [--act_quant] [--act_bits ACT_BITS]
+                        [--act_group_size ACT_GROUP_SIZE]
+                        [--act_topk ACT_TOPK] [--act_stochastic] [--fp4]
+                        [--gamma1 GAMMA1] [--gamma2 GAMMA2] [--theta THETA]
+                        [--total_T TOTAL_T] [--eta ETA]
+main_pretrain.py: error: ambiguous option: --save could match --save_every, --save_dir
+W0119 15:06:27.909000 1838329 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1838335 closing signal SIGTERM
+E0119 15:06:27.973000 1838329 /gpfs/home2/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 2) local_rank: 0 (pid: 1838334) of binary: /home/huangti/miniconda3/envs/spam/bin/python
+Traceback (most recent call last):
+  File "/home/huangti/miniconda3/envs/spam/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.5.0', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/huangti/miniconda3/envs/spam/lib/python3.11/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main_pretrain.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-01-19_15:06:27
+  host      : gcn155.local.snellius.surf.nl
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 1838334)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+
+JOB STATISTICS
+==============
+Job ID: 9496537
+Cluster: snellius
+User/Group: huangti/huangti
+State: FAILED (exit code 1)
+Nodes: 1
+Cores per node: 16
+CPU Utilized: 00:01:25
+CPU Efficiency: 8.30% of 00:17:04 core-walltime
+Job Wall-clock time: 00:01:04
+Memory Utilized: 946.17 MB
+Memory Efficiency: 0.26% of 360.00 GB

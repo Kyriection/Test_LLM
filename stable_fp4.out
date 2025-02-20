@@ -1,0 +1,6 @@
+Starting script
+FP4 training
+Keep in original linear layer lm_head Linear(in_features=512, out_features=32000, bias=False)
+Rank 0 finished successfully
+[1;34mwandb[0m: 🚀 View run [33mtest-q-stable-spam[0m at: [34mhttps://wandb.ai/dri-ice/galore-x/runs/l2rtvk63[0m
+[1;34mwandb[0m: Find logs at: [1;35m../../../../gpfs/home2/huangti/Projects/LLM_Pretraining_Test/wandb/run-20250117_103756-l2rtvk63/logs[0m
