@@ -706,14 +706,14 @@ class LlamaForCausalLM(LlamaPreTrainedModel):
             shift_labels = shift_labels.view(-1)
             # Enable model parallelism
             shift_labels = shift_labels.to(shift_logits.device)
+            loss = loss_fct(shift_logits, shift_labels)
 
-            if loss_fct < 1:
+            if loss < 1:
                 import pdb; pdb.set_trace()
 
-            print("shift logits",shift_logits.sum())
-            print("shift softmax",shift_logits.softmax(dim=-1).sum())
-            
-            loss = loss_fct(shift_logits, shift_labels)
+                print("shift logits",shift_logits.sum())
+                print("shift softmax",shift_logits.softmax(dim=-1).sum())
+                
 
         if not return_dict:
             output = (logits,) + outputs[1:]
