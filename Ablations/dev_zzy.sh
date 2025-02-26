@@ -17,7 +17,7 @@ torchrun --standalone --nproc_per_node 1 main_pretrain.py \
     --weight_decay 0 \
     --project amazing_LLM_tokenwisenorm \
     --name 130m_top0.05_100prj_amazing_LLM_tokenwisenorm_256 \
-    --save_dir /scratch-shared/HTJ/60m_top0.05_amazing_LLM_tokenwisenorm_256  \
+    --save_dir 60m_top0.05_amazing_LLM_tokenwisenorm_256  \
     --restore_optimizer \
     --gamma1 0.7 \
     --gamma2 0.9 \
