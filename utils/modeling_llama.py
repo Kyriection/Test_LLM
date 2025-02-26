@@ -695,7 +695,7 @@ class LlamaForCausalLM(LlamaPreTrainedModel):
         if labels is not None:
             # NOTE: big optimization could be done here (?)
             # maybe the copy operation that you saw in the debugger was happening here
-            import pdb; pdb.set_trace()
+            # import pdb; pdb.set_trace()
 
             # Shift so that tokens < n predict n
             shift_logits = logits[..., :-1, :].contiguous()
@@ -706,6 +706,10 @@ class LlamaForCausalLM(LlamaPreTrainedModel):
             shift_labels = shift_labels.view(-1)
             # Enable model parallelism
             shift_labels = shift_labels.to(shift_logits.device)
+
+            if loss_fct < 1:
+                import pdb; pdb.set_trace()
+
             print("shift logits",shift_logits.sum())
             print("shift softmax",shift_logits.softmax(dim=-1).sum())
             
