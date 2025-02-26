@@ -695,6 +695,7 @@ class LlamaForCausalLM(LlamaPreTrainedModel):
         if labels is not None:
             # NOTE: big optimization could be done here (?)
             # maybe the copy operation that you saw in the debugger was happening here
+            import pdb; pdb.set_trace()
 
             # Shift so that tokens < n predict n
             shift_logits = logits[..., :-1, :].contiguous()
